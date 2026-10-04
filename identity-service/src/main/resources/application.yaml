@@ -1,0 +1,25 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: identity-service
+  datasource:
+    url: jdbc:postgresql://localhost:5433/identity_db
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    redis:
+      host: localhost
+      port: 6380
+
+app:
+  jwt:
+    secret: 8Qv7mK2xP9rL4tY6nW3cH5sJ0dF1gZ8aV6uN2pX4qRk=
+    access-token-expiration: 900000
+    refresh-token-expiration: 604800000

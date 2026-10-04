@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: product-service
+
+app:
+  jwt:
+    secret: 8Qv7mK2xP9rL4tY6nW3cH5sJ0dF1gZ8aV6uN2pX4qRk=
